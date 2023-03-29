@@ -23,12 +23,17 @@ def train_model(train_data, model_name, target_column):
 
     except Exception as e:
         print("Error training model:", e)
-        return None
+        return "An error occurred while training the model. Please check if the training data and model name are correctly specified and try again."
 
 def test_model(test_data, model, target_column):
-    X_test = test_data.drop(columns=[target_column])
-    y_test = test_data[target_column]
-    y_pred = model.predict(X_test)
-    y_proba = model.predict_proba(X_test)
+    try:
+        X_test = test_data.drop(columns=[target_column])
+        y_test = test_data[target_column]
+        y_pred = model.predict(X_test)
+        y_proba = model.predict_proba(X_test)
 
-    return y_test, y_pred, y_proba
+        return y_test, y_pred, y_proba
+
+    except Exception as e:
+        print("Error testing model:", e)
+        return "An error occurred while testing the model. Please check if the testing data and model are correctly specified and try again."
