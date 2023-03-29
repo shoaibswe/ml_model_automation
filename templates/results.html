@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
     <title>Results</title>
-</head>
-
-<body>
+  </head>
+  <body>
     <h1>Results</h1>
     <table>
+      <thead>
         <tr>
-            <th>Model</th>
-            <th>Accuracy</th>
-            <th>F1 Score</th>
-            <th>AUC</th>
+          <th>Model</th>
+          <th>Accuracy</th>
+          <th>Precision</th>
+          <th>Recall</th>
+          <th>F1 Score</th>
+          <th>AUC Score</th>
         </tr>
+      </thead>
+      <tbody>
         {% for result in results %}
         <tr>
-            <td>{{ result["model"] }}</td>
-            <td>{{ result["accuracy"] }}</td>
-            <td>{{ result["f1_score"] }}</td>
-            <td>{{ result["auc"] }}</td>
+          <td>{{ result.model_name }}</td>
+          <td>{{ result.accuracy }}</td>
+          <td>{{ result.precision }}</td>
+          <td>{{ result.recall }}</td>
+          <td>{{ result.f1_score }}</td>
+          <td>{{ result.auc_score }}</td>
         </tr>
         {% endfor %}
+      </tbody>
     </table>
-    <a href="{{ url_for('index') }}">Back</a>
-</body>
-
+  </body>
 <footer style="padding-top: 2%;">
     <i> <a href="https://www.linkedin.com/in/shoaibswe" target="_blank"> Developed by Shoaib</a></i>
 </footer>
-
 </html>
