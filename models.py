@@ -1,27 +1,34 @@
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
 
 def train_model(train_data, model_name, target_column):
-    # Extract features and target from the training data
-    X_train = train_data.drop(target_column, axis=1)
-    y_train = train_data[target_column]
+    try:
+        X_train = train_data.drop(columns=[target_column])
+        y_train = train_data[target_column]
 
-    # Train the model based on the model_name
-    if model_name == "RandomForest":
-        model = RandomForestClassifier(random_state=42)
-    elif model_name == "LogisticRegression":
-        model = LogisticRegression(random_state=42)
-    # Add more models as needed
+        if model_name == "LogisticRegression":
+            model = LogisticRegression(max_iter=1000)
+            model.fit(X_train, y_train)
+        elif model_name == "RandomForestClassifier":
+            model = RandomForestClassifier()
+            model.fit(X_train, y_train)
+        elif model_name == "SVM":
+            model = SVC(probability=True)
+            model.fit(X_train, y_train)
+        else:
+            raise ValueError("Invalid model name")
 
-    model.fit(X_train, y_train)
-    return model
+        return model
+
+    except Exception as e:
+        print("Error training model:", e)
+        return None
 
 def test_model(test_data, model, target_column):
-    X_test = test_data.drop(target_column, axis=1)
+    X_test = test_data.drop(columns=[target_column])
     y_test = test_data[target_column]
-
-    # Make predictions
     y_pred = model.predict(X_test)
-    y_proba = model.predict_proba(X_test)[:, 1]
+    y_proba = model.predict_proba(X_test)
 
     return y_test, y_pred, y_proba

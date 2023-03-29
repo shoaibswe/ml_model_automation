@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ML App</title>
-</head>
-<body>
-    <h1>Upload CSV and Select Models</h1>
-    <form action="/" method="post" enctype="multipart/form-data">
-        <label for="csv_file">CSV file:</label>
-        <input type="file" name="csv_file" required><br><br>
-
-        <label for="target">Target column:</label>
-        <input type="text" name="target" required><br><br>
-
-        <label for="models">Select ML models:</label><br>
-        <input type="checkbox" name="models" value="RandomForest">Random Forest<br>
-        <input type="checkbox" name="models" value="LogisticRegression">Logistic Regression<br>
-        <!-- Add more models as needed -->
-
-        <br><input type="submit" value="Submit">
+<html>
+  <head>
+    <title>ML Model Trainer</title>
+  </head>
+  <body>
+    <h1>ML Model Trainer</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+      <input type="file" name="csv_file">
+      <br><br>
+      <label for="target">Target Column:</label>
+      <input type="text" name="target" required>
+      <br><br>
+      <label for="train_size">Train Size:</label>
+      <input type="number" name="train_size" min="0" max="1" step="0.01" value="0.8" required>
+      <br><br>
+      <label for="test_size">Test Size:</label>
+      <input type="number" name="test_size" min="0" max="1" step="0.01" value="0.2" required>
+      <br><br>
+      <label for="models">Models:</label>
+      <select name="models" multiple required>
+        <option value="LogisticRegression">Logistic Regression</option>
+        <option value="RandomForestClassifier">Random Forest Classifier</option>
+        <option value="SVM">Support Vector Machine</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Train and Test">
     </form>
-</body>
+  </body>
+
+  <footer style="padding-top: 2%;">
+    <i> <a href="https://www.linkedin.com/in/shoaibswe" target="_blank"> Developed by Shoaib</a></i>
+  </footer>
 </html>

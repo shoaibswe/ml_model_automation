@@ -22,11 +22,15 @@ def index():
         # Get the target column name from the form
         target_column = request.form["target"]
 
+        # Get the train and test sizes from the form
+        train_size = float(request.form["train_size"])
+        test_size = float(request.form["test_size"])
+
         # Pass the target column to the load_and_preprocess_data function
         data = dp.load_and_preprocess_data(csv_file_path, target_column)
 
         # Split the data into training and testing sets
-        train_data, test_data = train_test_split(data, test_size=0.2, random_state=42)
+        train_data, test_data = train_test_split(data, train_size=train_size, test_size=test_size, random_state=42)
 
         # Train and test models
         results = []
