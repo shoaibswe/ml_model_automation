@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Results</h1>
+    <table>
+        <tr>
+            <th>Model</th>
+            <th>Accuracy</th>
+            <th>F1 Score</th>
+            <th>AUC</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result["model"] }}</td>
+            <td>{{ result["accuracy"] }}</td>
+            <td>{{ result["f1_score"] }}</td>
+            <td>{{ result["auc"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for('index') }}">Back</a>
+</body>
+</html>
