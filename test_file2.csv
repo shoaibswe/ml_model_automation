@@ -1,0 +1,337 @@
+feature2,age,target
+0,19,COPD
+1,29,COPD
+0,28,N
+1,36,N
+1,24,N
+1,18,COPD
+1,32,N
+0,22,heart failure
+1,36,pneumonia
+1,18,COPD
+0,36,Heart Failure
+1,30,heart failure
+0,22,pneumonia
+1,32,COPD
+0,31,N
+1,31,N
+0,33,COPD
+0,18,BRON
+0,20,COPD
+0,24,heart failure
+1,25,COPD
+0,29,heart failure
+1,36,heart failure
+1,24,COPD
+1,37,N
+0,27,N
+0,37,COPD
+0,26,heart failure
+0,23,N
+0,24,heart failure
+1,24,heart failure
+1,26,pneumonia
+0,20,N
+1,34,COPD
+1,33,BRON
+1,35,N
+0,36,COPD
+1,24,N
+0,37,COPD
+0,30,COPD
+1,27,COPD
+1,34,COPD
+1,27,BRON
+1,32,heart failure
+0,26,COPD
+1,28,COPD
+1,35,COPD
+1,33,N
+1,21,heart failure
+0,24,COPD
+1,18,N
+1,26,pneumonia
+1,19,COPD
+0,31,N
+0,36,COPD
+1,32,pneumonia
+1,26,N
+1,25,N
+1,27,COPD
+0,27,heart failure
+0,37,N
+0,24,COPD
+0,30,heart failure
+0,25,N
+0,18,N
+1,20,COPD
+0,30,N
+1,21,pneumonia
+1,34,COPD
+0,21,COPD
+1,32,COPD
+0,27,N
+0,18,COPD
+1,33,COPD
+0,21,N
+0,34,N
+1,31,heart failure
+1,35,heart failure
+1,37,N
+1,19,COPD
+1,18,COPD
+0,32,N
+0,26,heart failure
+1,31,N
+0,36,N
+0,26,COPD
+0,21,Heart Failure
+0,31,N
+1,29,COPD
+0,28,N
+1,36,N
+1,27,heart failure
+0,36,BRON
+0,18,COPD
+1,35,COPD
+1,33,COPD
+1,32,COPD
+0,31,COPD
+1,37,COPD
+1,34,Heart Failure
+0,22,Heart Failure
+1,36,COPD
+0,24,pneumonia
+0,25,COPD
+1,31,COPD
+0,25,COPD
+0,37,N
+1,24,COPD
+1,27,N
+0,35,heart failure
+0,35,N
+1,23,COPD
+0,23,COPD
+0,28,COPD
+1,36,COPD
+0,25,N
+1,28,N
+1,22,pneumonia
+1,33,COPD
+0,29,N
+0,24,COPD
+0,26,COPD
+1,33,BRON
+1,27,N
+1,27,heart failure
+0,23,N
+1,34,COPD
+0,25,COPD
+0,34,heart failure
+1,20,heart failure
+1,35,heart failure
+0,26,COPD
+0,20,COPD
+0,21,N
+1,30,heart failure
+0,34,N
+1,18,N
+0,33,N
+0,27,COPD
+0,30,COPD
+1,20,heart failure
+1,18,COPD
+0,37,N
+1,31,N
+1,19,COPD
+0,32,heart failure
+1,35,heart failure
+0,20,COPD
+1,18,COPD
+0,31,N
+1,21,N
+0,36,heart failure
+1,24,N
+1,34,COPD
+0,19,COPD
+1,35,COPD
+1,22,N
+1,34,N
+0,27,COPD
+1,37,COPD
+0,36,N
+1,34,N
+0,32,heart failure
+1,18,COPD
+0,36,heart failure
+1,23,COPD
+1,26,COPD
+1,34,COPD
+0,34,COPD
+0,20,COPD
+0,29,COPD
+0,25,N
+0,28,N
+0,29,heart failure
+0,33,heart failure
+1,24,COPD
+1,25,COPD
+1,28,COPD
+1,28,COPD
+0,25,copd
+0,21,COPD
+0,26,COPD
+1,25,N
+0,37,COPD
+0,33,COPD
+1,32,COPD
+0,25,COPD
+0,29,COPD
+1,19,COPD
+0,37,N
+0,23,N
+1,18,COPD
+1,25,COPD
+1,32,N
+0,36,N
+1,22,COPD
+1,33,COPD
+0,31,BRON
+0,30,COPD
+1,24,N
+0,18,N
+0,32,COPD
+1,31,heart failure
+1,28,COPD
+0,29,N
+0,33,pneumonia
+1,18,N
+0,36,N
+0,33,pneumonia
+1,21,heart failure
+1,23,COPD
+1,30,COPD
+1,18,COPD
+0,18,COPD
+0,31,N
+1,23,COPD
+0,34,COPD
+0,34,COPD
+1,20,COPD
+0,21,COPD
+1,32,N
+1,35,N
+1,30,N
+1,33,COPD
+0,36,N
+1,28,N
+1,36,heart failure
+1,32,BRON
+1,28,Heart Failure
+0,26,heart failure
+1,28,heart failure
+0,19,N
+0,26,N
+1,23,COPD
+0,19,N
+0,37,COPD
+0,36,COPD
+1,18,heart failure
+0,24,N
+1,33,heart failure
+0,19,N
+0,30,N
+0,27,N
+1,31,pneumonia
+1,28,Heart Failure
+0,31,N
+0,23,COPD
+1,33,N
+0,29,COPD
+1,22,COPD
+1,31,COPD
+0,18,COPD
+1,36,COPD
+0,21,pneumonia
+1,35,N
+1,24,N
+1,33,N
+0,36,heart failure
+0,21,heart failure
+0,27,heart failure
+0,29,BRON
+0,25,heart failure
+1,25,COPD
+1,19,N
+1,18,N
+0,22,N
+0,37,COPD
+1,21,COPD
+1,31,pneumonia
+1,30,COPD
+0,34,COPD
+0,29,COPD
+1,21,COPD
+0,29,N
+1,33,heart failure
+0,25,N
+0,30,N
+0,35,COPD
+0,21,copd
+1,26,N
+0,19,COPD
+1,34,COPD
+0,27,N
+1,29,N
+1,18,N
+0,20,COPD
+0,24,COPD
+0,22,N
+1,21,COPD
+0,34,COPD
+1,32,COPD
+0,26,COPD
+0,37,COPD
+0,19,heart failure
+1,22,N
+1,21,COPD
+1,24,heart failure
+0,35,COPD
+1,28,COPD
+1,25,N
+0,36,COPD
+0,20,BRON
+1,23,heart failure
+1,23,pneumonia
+0,30,N
+1,30,COPD
+0,27,COPD
+0,21,COPD
+1,32,N
+1,21,COPD
+1,22,COPD
+0,37,N
+1,29,copd
+0,34,COPD
+0,30,N
+1,22,COPD
+0,24,N
+1,33,N
+0,25,COPD
+0,36,COPD
+1,33,N
+0,28,COPD
+0,27,COPD
+0,21,Heart Failure
+0,20,N
+1,35,COPD
+1,19,COPD
+1,35,N
+1,24,COPD
+1,25,N
+0,33,COPD
+1,20,COPD
+0,20,pneumonia
+0,27,Heart Failure
+0,20,COPD
+1,25,Heart Failure

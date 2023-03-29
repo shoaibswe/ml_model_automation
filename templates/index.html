@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ML Model Trainer</title>
+    <title>ML Automator APP</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .checkbox-container {
+        display: flex;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
-    <h1>ML Model Trainer</h1>
-    <form action="/" method="POST" enctype="multipart/form-data">
-      <input type="file" name="csv_file">
+    <h1>ML Automator APP</h1>
+    <form method="POST" enctype="multipart/form-data">
+      <label for="csv_file">Upload CSV file:</label>
+      <input type="file" name="csv_file" id="csv_file" required>
       <br><br>
       <label for="target">Target Column:</label>
       <input type="text" name="target" required>
       <br><br>
       <label for="train_size">Train Size:</label>
-      <input type="number" name="train_size" min="0" max="1" step="0.01" value="0.8" required>
+      <input type="number" name="train_size" id="train_size" step="0.01" min="0" max="1" value="0.7" required>
       <br><br>
       <label for="test_size">Test Size:</label>
-      <input type="number" name="test_size" min="0" max="1" step="0.01" value="0.2" required>
+      <input type="number" name="test_size" id="test_size" step="0.01" min="0" max="1" value="0.3" required>
       <br><br>
-      <label for="models">Models:</label>
-      <select name="models" multiple required>
-        <option value="LogisticRegression">Logistic Regression</option>
-        <option value="RandomForestClassifier">Random Forest Classifier</option>
-        <option value="SVM">Support Vector Machine</option>
-      </select>
+      <p>Select ML models:</p>
+      <div class="checkbox-container">
+        <input type="checkbox" name="models" id="lr" value="Logistic Regression" checked>
+        <label for="lr">Logistic Regression</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" name="models" id="dt" value="Decision Tree Classifier" checked>
+        <label for="dt">Decision Tree Classifier</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" name="models" id="rfc" value="Random Forest Classifier" checked>
+        <label for="rfc">Random Forest Classifier</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" name="models" id="gbc" value="Gradient Boosting Classifier" checked>
+        <label for="gbc">Gradient Boosting Classifier</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" name="models" id="svc" value="Support Vector Machine Classifier" checked>
+        <label for="svc">Support Vector Machine Classifier</label>
+      </div>
       <br><br>
-      <input type="submit" value="Train and Test">
+      <input type="submit" value="Submit">
     </form>
   </body>
-
   <footer style="padding-top: 2%;">
     <i> <a href="https://www.linkedin.com/in/shoaibswe" target="_blank"> Developed by Shoaib</a></i>
   </footer>

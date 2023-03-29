@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Results</title>
+    <title>ML Automator APP - Results</title>
   </head>
   <body>
-    <h1>Results</h1>
-    <table>
+    <h1>ML Automator APP - Results</h1>
+    {% if results %}
+    <table border="1">
       <thead>
         <tr>
-          <th>Model</th>
+          <th>Model Name</th>
           <th>Accuracy</th>
           <th>Precision</th>
           <th>Recall</th>
@@ -29,6 +30,11 @@
         {% endfor %}
       </tbody>
     </table>
+    <br>
+    <a href="/">Back to Home</a>
+    {% else %}
+    <p>No results to display.</p>
+    {% endif %}
   </body>
 <footer style="padding-top: 2%;">
     <i> <a href="https://www.linkedin.com/in/shoaibswe" target="_blank"> Developed by Shoaib</a></i>
