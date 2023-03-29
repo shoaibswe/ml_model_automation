@@ -1,4 +1,4 @@
-feature2,feature,age,target
+feature2,feature,age,test
 0,"BP33_Asthma,E W,P R M,43,F.wav",19,COPD
 1,"DP63_COPD,E W,P R L ,58,F.wav",29,COPD
 0,"EP30_N,N,P R M,18,F.wav",28,N
