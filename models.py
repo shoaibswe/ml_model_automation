@@ -1,6 +1,6 @@
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier
 from sklearn.svm import SVC
 
 def train_model(train_data, model_name, target_column):
@@ -14,6 +14,8 @@ def train_model(train_data, model_name, target_column):
         model = GradientBoostingClassifier(random_state=42)
     elif model_name == "Support Vector Machine Classifier":
         model = SVC(random_state=42)
+    elif model_name == "AdaBoost Classifier":
+        model = AdaBoostClassifier(random_state=42)
 
     X_train = train_data.drop(target_column, axis=1)
     y_train = train_data[target_column]
